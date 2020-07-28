@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 `
 
@@ -15,7 +15,7 @@ function Landing() {
   return (
     <Wrapper>
         <Nav />
-        <Title>Home</Title>
+        <Title>Law Enforcement Accountability Tracker</Title>
     </Wrapper>
   );
 }
