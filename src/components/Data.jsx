@@ -11,13 +11,13 @@ const Title = styled.h1`
     font-weight: 400;
 `
 
-function Landing() {
+function Data() {
   return (
     <Wrapper>
         <Nav />
-        <Title>Home</Title>
+        <Title>Data</Title>
     </Wrapper>
   );
 }
 
-export default Landing;
+export default Data;
