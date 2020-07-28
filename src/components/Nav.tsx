@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { SearchBox, ISearchBoxStyles, Text } from '@fluentui/react';
+import { initializeIcons, SearchBox, ISearchBoxStyles, Text } from '@fluentui/react';
+
+initializeIcons();
 
 const Wrapper = styled.div`
     display: flex;
@@ -14,11 +16,6 @@ const Wrapper = styled.div`
 const ItemWrapper = styled.div`
     display: flex;
     align-items: center;
-`
-
-const Logo = styled.h1`
-    font-size: 24px;
-    font-weight: 400;
 `
 
 const Items = styled.div`
@@ -56,9 +53,6 @@ function Nav() {
         <SearchBox
             styles={ searchBoxStyles }
             placeholder="Search"
-            onEscape={ev => {
-            console.log('Custom onEscape Called');
-            }}
             onClear={ev => {
             console.log('Custom onClear Called');
             }}
