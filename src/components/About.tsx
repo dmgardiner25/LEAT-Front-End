@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 function About() {
   return (
     <Wrapper>
-        <Nav />
+        <Nav inData={false}/>
         <Text variant={'xxLargePlus'}>About</Text>
     </Wrapper>
   );
