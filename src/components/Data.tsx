@@ -38,7 +38,7 @@ function Data({ match }: props) {
 
   // Fetch data from psql database
   const getReportData = () => {
-    fetch("http://localhost:3001/data")
+    fetch("https://leat-express-server.herokuapp.com/data")
       .then((response) => {
         return response.text();
       })

@@ -1,9 +1,9 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-    user: 'leat@leat',
-    host: 'leat.postgres.database.azure.com',
-    database: 'leat',
-    password: 'MSFT2020!',
+    user: process.env.USER,
+    host: process.env.HOST,
+    database: process.DATABASE,
+    password: process.env.PASSWORD,
     port: 5432,
     ssl: true,
 });
