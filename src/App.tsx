@@ -11,6 +11,7 @@ function App() {
       <Switch>
         <Route exact={true} path="/" component={Landing} />
         <Route exact={true} path="/data" component={Data} />
+        <Route path="/data/:desc" component={Data} />
         <Route exact={true} path="/about" component={About} />
       </Switch>
     </BrowserRouter>

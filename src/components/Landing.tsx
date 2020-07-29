@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 function Landing() {
   return (
     <Wrapper>
-        <Nav />
+        <Nav inData={false}/>
         <Text variant={'xxLargePlus'}>Law Enforcement Accountability Tracker</Text>
     </Wrapper>
   );
