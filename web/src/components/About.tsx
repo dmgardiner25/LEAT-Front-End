@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 function About() {
   return (
     <Wrapper>
-      <Nav />
+      <Nav inData={false} />
       <Text variant={'xxLargePlus'}>About</Text>
 
       <Image src="https://hackboxstorage.blob.core.windows.net/projectimages/914261591112659878.jpg" />
