@@ -22,6 +22,6 @@ app.get('/data', (req, res) => {
   })
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`App running on port ${port}.`)
 })
