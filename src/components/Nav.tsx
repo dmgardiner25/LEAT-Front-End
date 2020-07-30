@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 import { initializeIcons, SearchBox, Text } from "@fluentui/react";
+import logo from "./../static/images/logo.png";
 
 initializeIcons();
 
@@ -18,6 +19,23 @@ const ItemWrapper = styled.div`
   align-items: center;
 `;
 
+const LogoLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
+const Logo = styled.img`
+margin-top: 10px;  
+width: 50px;
+`;
+
 const Items = styled.div`
   display: flex;
   justfiy-content: center;
@@ -26,7 +44,6 @@ const Items = styled.div`
 
 const Item = styled(Link)`
   margin-right: 75px;
-  text-decoration: none;
 
   &:focus,
   &:hover,
@@ -51,7 +68,12 @@ function Nav({ inData }: props) {
   return (
     <Wrapper>
       <ItemWrapper>
-        <Text variant={"xxLarge"}>LEAT</Text>
+        <LogoLink to="/">
+          <Logo src={logo} />
+          <Text style={{ color: "black" }} variant={"xxLarge"}>
+            LEAT
+          </Text>
+        </LogoLink>
         <Items>
           <Item to="/">
             <ItemText variant={"mediumPlus"}>Home</ItemText>
