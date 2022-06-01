@@ -1673,19 +1673,6 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/pg-types@*":
-  version "1.11.5"
-  resolved "https://registry.yarnpkg.com/@types/pg-types/-/pg-types-1.11.5.tgz#1eebbe62b6772fcc75c18957a90f933d155e005b"
-  integrity sha512-L8ogeT6vDzT1vxlW3KITTCt+BVXXVkLXfZ/XNm6UqbcJgxf+KPO7yjWx7dQQE8RW07KopL10x2gNMs41+IkMGQ==
-
-"@types/pg@^7.14.4":
-  version "7.14.4"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.4.tgz#15cfcfd9300f94fd44e6191a1b0ba18d2de209f6"
-  integrity sha512-yCKVMCcFPZSFHGg+8qjY368uf3ruyDBPjxvOU2ZcGa/vRFo5Ti5Y6z6vl+2hxtwm9VMWUGb6TWkIk3cIV8C0Cw==
-  dependencies:
-    "@types/node" "*"
-    "@types/pg-types" "*"
-
 "@types/prop-types@*":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
@@ -4231,6 +4218,11 @@ es6-iterator@2.0.3, es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
+es6-promise@^3.1.2, es6-promise@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
+  integrity sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==
+
 es6-symbol@^3.1.1, es6-symbol@~3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.3.tgz#bad5d3c1bcdac28269f4cb331e431c78ac705d18"
@@ -4488,9 +4480,9 @@ events@^3.0.0:
   integrity sha512-Rv+u8MLHNOdMjTAFeT3nCjHn2aGlx435FP/sDHNaRhDEMwyI/aB22Kj2qIN8R0cw3z28psEQLYwxVKLsKrMgWg==
 
 eventsource@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.0.7.tgz#8fbc72c93fcd34088090bc0a4e64f4b5cee6d8d0"
-  integrity sha512-4Ln17+vVT0k8aWq+t/bF5arcS3EpT9gYtW66EPacdj/mAFevznsnyoHLPy2BA8gbIQeIHoPsvwmfBftfcG//BQ==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.1.tgz#4544a35a57d7120fba4fa4c86cb4023b2c09df2f"
+  integrity sha512-qV5ZC0h7jYIAOhArFJgSfdyz6rALJyb270714o7ZtNnw2WSJ+eexhKtE0O8LYPRsHZHf2osHKZBxGPvm3kPkCA==
   dependencies:
     original "^1.0.0"
 
@@ -5397,6 +5389,13 @@ http-errors@~1.7.2:
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.10.tgz#92c9c1374c35085f75db359ec56cc257cbb93fa4"
   integrity sha1-ksnBN0w1CF912zWexWzCV8u5P6Q=
+
+http-post-message@^0.2:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/http-post-message/-/http-post-message-0.2.3.tgz#32c560ac615f310a7e459ffc71277b579b242e1e"
+  integrity sha512-76heerrzYhvWptJfWxUarHw2O3fkMqF48bbq/S6XFWHUc34o8tkySBwtReXuAKJAECZWVu8U0TYLckFcwtSdrg==
+  dependencies:
+    es6-promise "^3.2.1"
 
 http-proxy-middleware@0.19.1:
   version "0.19.1"
@@ -6767,6 +6766,11 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -8631,6 +8635,37 @@ postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, po
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+powerbi-client-react@^1.0.1:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/powerbi-client-react/-/powerbi-client-react-1.3.3.tgz#608cd1d6f6a58b5d5bea745457e09de881f8bc83"
+  integrity sha512-cIwdGUfljR6BBA5jhtwYkirdexnJMYtFOSiD9V65y6ZOAcjDD+q93rCvhECv+C2MQo/l/LCLZk98VUKKR67MLg==
+  dependencies:
+    lodash.isequal "^4.5.0"
+    powerbi-client "^2.18.0"
+
+powerbi-client@^2.18.0:
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/powerbi-client/-/powerbi-client-2.19.1.tgz#634903f6d5039344c00a38be456bd93a282c87ea"
+  integrity sha512-vJOexJ9MA/NaaGju6FT1M5o/0lmLtEVNajeW8Qe5LnTYw+K/B05bKW649+9ZeZf20DOvr1kYLDCCHCsQ1CoV7w==
+  dependencies:
+    http-post-message "^0.2"
+    powerbi-models "^1.9.8"
+    powerbi-router "^0.1"
+    window-post-message-proxy "^0.2"
+
+powerbi-models@^1.9.8:
+  version "1.9.8"
+  resolved "https://registry.yarnpkg.com/powerbi-models/-/powerbi-models-1.9.8.tgz#ba3b85500f046dfeaf40e862f7e4ec79158ce05e"
+  integrity sha512-3L0T+fdZ8rUBwtQGDuDxPqk8p3o/GLzE6/8Xt8uO2yA4fjO9dK7xgZwZpFcZKXEY2TOr//eICbqyokKKTUvA1w==
+
+powerbi-router@^0.1:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/powerbi-router/-/powerbi-router-0.1.5.tgz#dd2d2d0474f8cb76690a85f6a51d8ca9fea93a32"
+  integrity sha1-3S0tBHT4y3ZpCoX2pR2Mqf6pOjI=
+  dependencies:
+    es6-promise "^3.2.1"
+    route-recognizer "^0.1.11"
+
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -8827,9 +8862,9 @@ querystring@0.2.0:
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
-  integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
 raf@^3.4.1:
   version "3.4.1"
@@ -9424,6 +9459,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+route-recognizer@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/route-recognizer/-/route-recognizer-0.1.11.tgz#810d8e5702abb4056d6dcb8e865c5685e7c14eb7"
+  integrity sha1-gQ2OVwKrtAVtbcuOhlxWhefBTrc=
 
 rsvp@^4.8.4:
   version "4.8.5"
@@ -10632,9 +10672,9 @@ url-loader@2.3.0:
     schema-utils "^2.5.0"
 
 url-parse@^1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
@@ -10967,6 +11007,13 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+window-post-message-proxy@^0.2:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/window-post-message-proxy/-/window-post-message-proxy-0.2.6.tgz#8d9800d441629c8bff0a8cb2bf9e0119702940ca"
+  integrity sha512-IwNWtUWVFarBa2F9vhmfv2yr0PfPm57QuOBCw3qSLaunhD3THcHUKQ4HrJQiCuYUT7LEjhUtaoA+hrV+wQzNmQ==
+  dependencies:
+    es6-promise "^3.1.2"
 
 word-wrap@~1.2.3:
   version "1.2.3"
